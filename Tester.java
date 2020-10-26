@@ -63,10 +63,13 @@ public class Tester{
     };
     System.out.println( arrToString(ArrayOps.sumCols(A)));
     System.out.println( arrToString(ArrayOps.sumCols(srtest1)));
-System.out.println();
+
+    System.out.println();
+
     int [][] B =  { {  1,  2, 3, 4 },
     {  2, 3,  4,  1 },
     { 3, 4,  1, 2 } };
+
     int [][] C = { {  1,  1, 1 },
     {  2, 2, 2 },
     { 3,  3, 3 } };
@@ -77,6 +80,10 @@ System.out.println();
     System.out.println( (ArrayOps.isRowMagic(C)));
     System.out.println( (ArrayOps.isRowMagic(D)));
 
+    System.out.println();
 
+    System.out.println( (ArrayOps.isColMagic(B)));
+    System.out.println( (ArrayOps.isColMagic(C)));
+    System.out.println( (ArrayOps.isColMagic(D)));
   }
 }
