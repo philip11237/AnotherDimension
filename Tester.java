@@ -1,13 +1,13 @@
 public class Tester{
   public static String arrToString(int[] arr){
-   String empty = "{";
-  for (int i = 0; i <arr.length; i++) {
-    if (i==arr.length-1){
-    empty += arr[i];}
-    else {empty += arr[i]+", ";}
-  }
-  return empty+="}";
-}
+    String empty = "{";
+    for (int i = 0; i <arr.length; i++) {
+      if (i==arr.length-1){
+        empty += arr[i];}
+        else {empty += arr[i]+", ";}
+      }
+      return empty+="}";
+    }
     public static void main (String []args){
       int[] sumtest1={1,2,3,4};
       int[] sumtest2={1,2,3,4,5};
@@ -58,12 +58,25 @@ public class Tester{
       System.out.println();
 
       int[][]  A = { {  1,  0, 12, -1 },
-                        {  7, -2,  2,  1 },
-                        { -5, -2,  2, -9 }
-                     };
-      System.out.println( arrToString(ArrayOps.sumCols(A)));
-        System.out.println( arrToString(ArrayOps.sumCols(srtest1)));
+      {  7, -2,  2,  1 },
+      { -5, -2,  2, -9 }
+    };
+    System.out.println( arrToString(ArrayOps.sumCols(A)));
+    System.out.println( arrToString(ArrayOps.sumCols(srtest1)));
+System.out.println();
+    int [][] B =  { {  1,  2, 3, 4 },
+    {  2, 3,  4,  1 },
+    { 3, 4,  1, 2 } };
+    int [][] C = { {  1,  1, 1 },
+    {  2, 2, 2 },
+    { 3,  3, 3 } };
+
+    int [][] D ={ {  2,  2, 2 },
+    {  2, 2, 2 } };
+    System.out.println( (ArrayOps.isRowMagic(B)));
+    System.out.println( (ArrayOps.isRowMagic(C)));
+    System.out.println( (ArrayOps.isRowMagic(D)));
 
 
-    }
+  }
 }
