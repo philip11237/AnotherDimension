@@ -33,6 +33,9 @@ public static int[] largestRows(int[][] matrix){
 }
 return totals;
 }
+public static  int sum(int[][] arr){
+  return sum(sumRows(arr));
+}
 
 
 
