@@ -54,5 +54,16 @@ public class Tester{
       System.out.println (ArrayOps.sum(satest1));
       System.out.println (ArrayOps.sum(satest2));
       System.out.println (ArrayOps.sum(satest3));
+
+      System.out.println();
+
+      int[][]  A = { {  1,  0, 12, -1 },
+                        {  7, -2,  2,  1 },
+                        { -5, -2,  2, -9 }
+                     };
+      System.out.println( arrToString(ArrayOps.sumCols(A)));
+        System.out.println( arrToString(ArrayOps.sumCols(srtest1)));
+
+
     }
 }

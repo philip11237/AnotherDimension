@@ -23,21 +23,38 @@ public class ArrayOps{
     int[] totals=new int [matrix.length];
     for (int i=0; i< matrix.length;i++){
       totals[i]=sum(matrix[i]);
+    }
+    return totals;
   }
-  return totals;
-}
-public static int[] largestRows(int[][] matrix){
-  int[] totals=new int [matrix.length];
-  for (int i=0; i< matrix.length;i++){
-    totals[i]=largest(matrix[i]);
-}
-return totals;
-}
-public static  int sum(int[][] arr){
-  return sum(sumRows(arr));
-}
 
 
+
+  public static int[] largestRows(int[][] matrix){
+    int[] totals=new int [matrix.length];
+    for (int i=0; i< matrix.length;i++){
+      totals[i]=largest(matrix[i]);
+    }
+    return totals;
+  }
+
+
+  public static  int sum(int[][] arr){
+    return sum(sumRows(arr));
+  }
+
+
+  public static int[] sumCols(int[][] matrix){
+    if (matrix.length==0){
+      return new int [0];
+    }
+    int[] totals=new int [matrix[0].length];
+    for (int c=0; c< matrix[0].length;c++){
+      for (int r=0; r< matrix.length;r++){
+        totals[c] += matrix[r][c];
+      }
+    }
+    return totals;
+  }
 
 
 
