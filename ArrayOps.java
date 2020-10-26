@@ -6,6 +6,8 @@ public class ArrayOps{
     }
     return total;
   }
+
+
   public static  int largest(int[]arr) {
     int tracker=arr[0];
     for (int i=1; i< arr.length;i++){
@@ -16,6 +18,14 @@ public class ArrayOps{
     return tracker;
   }
 
+
+  public static int[] sumRows(int[][] matrix){
+    int[] totals=new int [matrix.length];
+    for (int i=0; i< matrix.length;i++){
+      totals[i]=sum(matrix[i]);
+  }
+  return totals;
+}
 
 
 

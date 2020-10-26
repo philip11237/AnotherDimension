@@ -1,4 +1,13 @@
 public class Tester{
+  public static String arrToString(int[] arr){
+   String empty = "{";
+  for (int i = 0; i <arr.length; i++) {
+    if (i==arr.length-1){
+    empty += arr[i];}
+    else {empty += arr[i]+", ";}
+  }
+  return empty+="}";
+}
     public static void main (String []args){
       int[] sumtest1={1,2,3,4};
       int[] sumtest2={1,2,3,4,5};
@@ -8,12 +17,24 @@ public class Tester{
       System.out.println (ArrayOps.sum(sumtest3));
 
       System.out.println();
-      
+
       int[] ltest1={1,2,3,4};
       int[] ltest2={-1,-2,-3,-4,-5};
       int[] ltest3={1000};
       System.out.println (ArrayOps.largest(ltest1));
       System.out.println (ArrayOps.largest(ltest2));
       System.out.println (ArrayOps.largest(ltest3));
+
+      System.out.println();
+
+      int[][] srtest1={{1,2,3,4}, {1,2,3,4}};
+      int[][] srtest2={{-1,-2,-3,-4,-5} ,{1,2,3,4,5}};
+      int[][] srtest3={{1000}, {}};
+
+      System.out.println (arrToString(ArrayOps.sumRows(srtest1)));
+      System.out.println (arrToString(ArrayOps.sumRows(srtest2)));
+      System.out.println (arrToString(ArrayOps.sumRows(srtest3)));
+
+
     }
 }
