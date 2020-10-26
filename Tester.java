@@ -35,6 +35,16 @@ public class Tester{
       System.out.println (arrToString(ArrayOps.sumRows(srtest2)));
       System.out.println (arrToString(ArrayOps.sumRows(srtest3)));
 
+      System.out.println();
+
+      int[][] lrtest1={{1,2,3,4}, {1,2,3,4}};
+      int[][] lrtest2={{-1,-2,-3,-4,-5} ,{1,2,3,4,5}};
+      int[][] lrtest3={{1000}, {1}};
+
+      System.out.println (arrToString(ArrayOps.largestRows(lrtest1)));
+      System.out.println (arrToString(ArrayOps.largestRows(lrtest2)));
+      System.out.println (arrToString(ArrayOps.largestRows(lrtest3)));
+
 
     }
 }
